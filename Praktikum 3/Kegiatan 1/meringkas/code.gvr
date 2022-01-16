@@ -1,0 +1,16 @@
+define move3 :
+   do 3 :
+      move
+define turnright :
+   do 3 :
+      turnleft
+move
+do 2 :
+   move3
+   turnright
+move
+move
+do 2 :
+   turnright
+   move
+turnoff

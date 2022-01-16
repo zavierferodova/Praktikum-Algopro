@@ -1,0 +1,30 @@
+define turnright :
+   do 3 :
+      turnleft
+
+define turnaround :
+   do 2 :
+      turnleft
+
+define moveandpickbeeper :
+   move
+   if next_to_a_beeper :
+      pickbeeper
+
+do 7 :
+   moveandpickbeeper
+   turnright
+
+   do 4 :
+      moveandpickbeeper
+   turnaround
+
+   do 4 :
+      move
+   turnright
+
+turnaround
+
+do 7 :
+   move
+turnoff

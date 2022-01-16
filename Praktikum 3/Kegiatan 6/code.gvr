@@ -1,0 +1,32 @@
+define turnaround :
+   do 2 :
+      turnleft
+define turnright :
+   do 3 :
+      turnleft
+define gotoroom :
+   move
+   turnleft
+   move
+   putbeeper
+   turnaround
+   move
+   turnleft
+define servebreakfast :
+   move
+   gotoroom
+   move
+define walkwithturnright :
+   turnright
+   move
+   turnright
+do 3 :
+  servebreakfast
+walkwithturnright
+gotoroom
+move
+do 2 :
+   servebreakfast
+move
+walkwithturnright
+turnoff

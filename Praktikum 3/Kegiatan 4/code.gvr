@@ -1,0 +1,78 @@
+define moveandputbeeper :
+   move
+   putbeeper
+
+define moveandputbeeper2 :
+   do 2 :
+     moveandputbeeper
+
+define turnright :
+  do 3 :
+      turnleft
+
+define turnaround :
+  do 2 :
+    turnleft
+
+define tulis8 :
+   do 4 :
+      moveandputbeeper2
+      move
+      turnleft
+   turnright
+   do 3 :
+      moveandputbeeper2
+      move
+      turnleft
+   do 2 :
+      do 3 :
+         move
+      turnleft
+   turnaround
+   do 2 :
+      move
+   turnright
+   move
+   turnaround
+
+define tulis1 :
+   putbeeper
+   move
+   turnright
+   move
+   turnright
+   putbeeper
+   do 5 :
+     moveandputbeeper
+   turnright
+   move
+   turnleft
+   moveandputbeeper
+   turnleft
+   moveandputbeeper2
+   do 2 :
+     move
+   turnleft
+   move
+   turnaround
+
+define tulis9 :
+   putbeeper
+   move
+   turnleft
+   do 2 :
+      moveandputbeeper2
+      move
+      turnleft
+   putbeeper
+   do 4 :
+      moveandputbeeper2
+      move
+      turnright
+   turnaround
+   move
+
+tulis8
+tulis1
+tulis9
+turnoff

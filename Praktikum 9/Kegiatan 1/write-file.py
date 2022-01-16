@@ -1,0 +1,5 @@
+file = open('xxxxxxx205', "w")
+file.write('xxxxxxx205\n')
+file.write('00-00-0000\n')
+file.write('Zavier Ferodova Al Fitroh\n')
+file.close()

@@ -1,0 +1,48 @@
+define turnright :
+   do 3 :
+      turnleft
+
+define moveandputbeeper :
+   putbeeper
+   move
+
+define moveandputbeeper2 :
+   do 2 :
+      moveandputbeeper
+
+define walkandwritenumber2 :
+   do 2 :
+      moveandputbeeper2
+      turnright
+   do 2 :
+      moveandputbeeper2
+      turnleft
+   moveandputbeeper2
+   moveandputbeeper
+
+define walkandwritenumber0 :
+   do 2 :
+      moveandputbeeper2
+      turnleft
+      do 2 :
+         moveandputbeeper2
+      turnleft
+
+define walkandwritenumber5 :
+   do 2 :
+      moveandputbeeper2
+      turnleft
+   do 2 :
+      moveandputbeeper2
+      turnright
+   moveandputbeeper2
+   moveandputbeeper
+
+walkandwritenumber2
+move
+walkandwritenumber0
+do 4 :
+   move
+walkandwritenumber5
+
+turnoff

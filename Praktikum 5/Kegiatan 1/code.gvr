@@ -1,0 +1,17 @@
+# Angka terakhir NIM saya adalah 205
+
+move
+do 2 :
+   putbeeper
+do 2 :
+   move
+do 5 :
+   putbeeper
+move
+do 2 :
+   turnleft
+do 4 :
+   while next_to_a_beeper :
+      pickbeeper
+   move
+turnoff
