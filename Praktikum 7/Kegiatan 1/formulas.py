@@ -1,17 +1,13 @@
 formulas = {
-    'Triangle'     : 'L = 0.5 * a * t',
-    'Square'       : 'L = s ** 2',
-    'Rectangle'    : 'L = p * l',
-    'Circle'       : 'L = phi * r ** 2',
-    'Parallelogram': 'L = a * t'
+    'Segitiga'        : 'L = 0.5 * a * t',
+    'Persegi'         : 'L = s ** 2',
+    'Persegi Panjang' : 'L = p * l',
+    'Lingkaran'       : 'L = phi * r ** 2',
+    'Jajar Genjang'   : 'L = a * t'
 }
 
-print(f'''
-No | Nama Bangun     | Rumus Luas
----|-----------------|-------------------
- 1 | Segitiga        | {formulas['Triangle']}
- 2 | Persegi         | {formulas['Square']}
- 3 | Persegi Panjang | {formulas['Rectangle']}
- 4 | Lingkaran       | {formulas['Circle']}
- 5 | Jajar Genjang   | {formulas['Parallelogram']}
-''')
+print('No | Nama Bangun     | Rumus Luas')
+print('---|-----------------|-------------------')
+for index, key in enumerate(formulas.keys()):
+    print(' {} | {:15} | {}'.format(index+1, key, formulas[key]))
+    
